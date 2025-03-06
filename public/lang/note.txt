@@ -1,5 +1,0 @@
-// TODO: update i18n
-Hour
-This tournament
-Past Match
-Stats

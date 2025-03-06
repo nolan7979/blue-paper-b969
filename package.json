@@ -1,33 +1,26 @@
 {
-  "name": "blue-paper-b969",
+  "name": "frontend",
   "version": "0.1.0",
   "license": "LICENSE_HERE",
   "private": true,
-  "cloudflare": {
-      "label": "Next.js Framework Starter",
-      "products": [
-        "Workers"
-      ],
-      "categories": [],
-      "icon_urls": [
-        "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/5ca0ca32-e897-4699-d4c1-6b680512f000/public"
-      ],
-      "preview_image_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/e42eec61-db86-49c8-7b29-c3ed4783e400/public"
-    },
   "scripts": {
-      "build": "yarn install --immutable=false && next build",
-      "check": "opennextjs-cloudflare && tsc && wrangler deploy --dry-run",
-      "deploy": "corepack enable && opennextjs-cloudflare && wrangler deploy",
-      "dev": "next dev",
-      "lint": "next lint",
-      "preview": "opennextjs-cloudflare && wrangler dev",
-      "start": "next start",
-      "types": "wrangler types --env-interface CloudflareEnv env.d.ts"
-    },
+    "dev": "next dev -p 4000",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p 4000",
+    "lint": "next lint",
+    "lint:fix": "eslint src --fix && yarn format",
+    "lint:strict": "eslint --max-warnings=0 src",
+    "typecheck": "tsc --noEmit --incremental false",
+    "test:watch": "jest --watch",
+    "autotesting": "next build && pm2 start npm --name uniscore-client -- run start && cd ./automationTesting && git checkout main && git pull && npm install && npm run test",
+    "test": "jest",
+    "format": "prettier -w .",
+    "format:check": "prettier -c .",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
+    "postbuildV2": "npm run sitemap",
+    "sitemap": "next-sitemap"
+  },
   "dependencies": {
-     "wrangler": "3.107.3",
-     "@cloudflare/workers-types": "^4.20250204.0",
-      "@opennextjs/cloudflare": "0.5.3",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@headlessui/react": "^1.7.13",
@@ -94,8 +87,7 @@
     "victory-chart": "^37.0.2",
     "yarn": "^1.22.19",
     "yup": "^1.5.0",
-    "zustand": "^4.3.8",
-    "ajv": "^8.12.0"
+    "zustand": "^4.3.8"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
@@ -117,16 +109,16 @@
     "@types/nprogress": "^0.2.0",
     "@types/pako": "^2.0.3",
     "@types/react": "^18.0.35",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
     "babel-plugin-macros": "^3.1.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.9.0",
     "eslint-config-next": "^13.2.4",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unused-imports": "^3.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "jest": "^27.5.1",
     "lint-staged": "^12.5.0",
     "next-router-mock": "^0.7.5",
@@ -138,8 +130,7 @@
     "tailwindcss": "^3.2.7",
     "tailwindcss-debug-screens": "^2.2.1",
     "twin.macro": "^3.3.1",
-    "typescript": "^4.9.5",
-    "webpack": "^5.90.3"
+    "typescript": "^4.9.5"
   },
   "config": {
     "commitizen": null
@@ -149,5 +140,5 @@
       "preset": "emotion"
     }
   },
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
