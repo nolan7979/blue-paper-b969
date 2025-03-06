@@ -11,5 +11,11 @@
     "observability": {
       "enabled": true
     },
-    "upload_source_maps": true
+    "upload_source_maps": true,
+    "kv_namespaces": [
+        {
+        "binding": "NEXT_CACHE_WORKERS_KV",
+        "id": "6fb99665410b43da9f86477cd36f3a86"
+        }
+    ]
   }
