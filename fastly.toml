@@ -1,0 +1,9 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://www.fastly.com/documentation/reference/compute/fastly-toml
+
+authors = ["nolan@uniscore.com"]
+description = "A basic starter kit that demonstrates routing, simple synthetic responses and overriding caching rules."
+language = "javascript"
+manifest_version = 3
+name = "Default starter for TypeScript"
+service_id = "RN1zGvD6LSVkGnXM6r8g15"

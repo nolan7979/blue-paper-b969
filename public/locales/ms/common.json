@@ -1,0 +1,11 @@
+{
+  "user": {
+    "profile": "Profil",
+    "settings": "Tetapan",
+    "logout": "Log Keluar",
+    "login": "Log Masuk",
+    "login_with": "Log Masuk dengan",
+    "login_to": "Log masuk ke",
+    "signup_or_signin": "Daftar atau Log masuk"
+  }
+}

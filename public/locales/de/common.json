@@ -1,0 +1,11 @@
+{
+  "user": {
+    "profile": "Profil",
+    "settings": "Einstellungen",
+    "logout": "Abmelden",
+    "login": "Anmelden",
+    "login_with": "Anmelden mit",
+    "login_to": "Anmelden bei",
+    "signup_or_signin": "Anmelden oder registrieren"
+  }
+}

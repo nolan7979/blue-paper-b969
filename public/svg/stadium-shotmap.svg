@@ -1,0 +1,73 @@
+<svg viewBox="-16 -16 312 242" className="leading-4 align-top">
+  <defs className="text-red-400">
+    <clipPath id="k2hluab7da" className="">
+      <path d="M1440 0v5269H0V0h1440z" className="" />
+    </clipPath>
+    <clipPath id="8a192v16yb" className="">
+      <path d="M2 0a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" className="" />
+    </clipPath>
+    <clipPath id="m67azl3o0c" className="">
+      <path d="M280 0v210H0V0h280z" className="" />
+    </clipPath>
+  </defs>
+  <g
+    clipPath="url(#k2hluab7da)"
+    transform="translate(-124 -2011)"
+    className="text-red-400"
+  >
+    <path
+      stroke="#57AE6A"
+      strokeWidth="2"
+      fill="none"
+      strokeLinejoin="round"
+      d="M182 2012h164v66H182v-66zM300 2220c0-19.882-16.118-36-36-36s-36 16.118-36 36"
+      className=""
+    />
+    <path
+      stroke="#57AE6A"
+      strokeWidth="2"
+      fill="none"
+      strokeLinejoin="round"
+      d="M227 2012h74v22h-74v-22z"
+      className=""
+    />
+    <g clipPath="url(#8a192v16yb)" transform="translate(262 2053)" className="">
+      <path fill="#57AE6A" d="M0 0h4v4H0V0z" className="" />
+    </g>
+    <path
+      d="M293 2078c-6.622 9.11-17.149 15-29.003 15-11.85 0-22.375-5.887-28.997-14.992"
+      stroke="#57AE6A"
+      strokeWidth="2"
+      fill="none"
+      strokeLinejoin="round"
+      className=""
+    />
+    <path
+      d="M247 2013.5h34"
+      stroke="#57AE6A"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeMiterlimit="10"
+      className=""
+    />
+    <g clipPath="url(#m67azl3o0c)" transform="translate(124 2011)" className="">
+      <path
+        stroke="#57AE6A"
+        strokeWidth="4"
+        fill="none"
+        strokeLinejoin="round"
+        d="M0 0h280v210H0V0z"
+        className=""
+      />
+    </g>
+    <path
+      d="M391 2012c0 6.627 5.373 12 12 12M124.875 2023.895c6.627 0 12-5.381 12-12.02"
+      stroke="#57AE6A"
+      strokeWidth="2"
+      fill="none"
+      strokeLinejoin="round"
+      className=""
+    />
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "user": {
+    "profile": "Trang cá nhân",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất",
+    "login": "Đăng nhập",
+    "login_with": "Đăng nhập với",
+    "login_to": "Đăng nhập ",
+    "signup_or_signin": "Đăng ký hoặc đăng nhập"
+  }
+}
