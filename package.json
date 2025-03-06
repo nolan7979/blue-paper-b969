@@ -17,7 +17,7 @@
   "scripts": {
       "build": "yarn install --immutable=false && next build",
       "check": "opennextjs-cloudflare && tsc && wrangler deploy --dry-run",
-      "deploy": "opennextjs-cloudflare && wrangler deploy",
+      "deploy": "corepack enable && opennextjs-cloudflare && wrangler deploy",
       "dev": "next dev",
       "lint": "next lint",
       "preview": "opennextjs-cloudflare && wrangler dev",
@@ -149,5 +149,5 @@
       "preset": "emotion"
     }
   },
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "yarn@1.22.22"
 }
