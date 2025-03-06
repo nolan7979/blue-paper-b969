@@ -1,4 +1,4 @@
-const MillionLint = require('@million/lint');
+const withMillionLint = require('@million/lint');
 /* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { i18n } = require('./i18n.config.js');
@@ -168,6 +168,4 @@ const nextConfig = {
 //   disableLogger: true,
 // };
 
-module.exports = MillionLint.next({
-  enabled: false
-})(withTwin(nextConfig))
+module.exports = nextConfig;
